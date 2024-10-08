@@ -1,0 +1,43 @@
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.sobre__cabecalho {
+    margin-bottom: 10px;
+}
+
+.sobre__titulo {
+    font-size: 24px;
+    color: var(--laranja);
+}
+
+.sobre__imagem {
+    max-width: 450px;
+    height: auto; 
+    display: block; 
+}
+
+.sobre__texto {
+    margin-top: 10px;
+    font-size: 16px;
+    margin: 40px 0;
+    color: var(--cinza);
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .sobre__imagem {
+        max-width: 100%;
+    }
+}

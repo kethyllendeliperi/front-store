@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Courgette&family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Medula+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Courgette&family=Inter:wght@400;700&family=Medula+One&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="telefones">
+            <p>(11) 91234-1234</p>
+            <p>(11) 1234-1234</p>
+        </div>
+        <div class="cabecalho">
+            <img src="imagens/Logo.png" alt="Logo da Front-End Store" class="container__imagem">
+            <ul class="opcoes">
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Home</a></li>
+                <li class="opcoes__item opcoes__menu-suspenso">
+                    <a href="#" class="opcoes__link">Empresa</a>
+                    <ul class="menu-suspenso">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">História</a></li>
+                        <li class="opcoes__menu-suspenso">
+                            <a href="#">Parceiros</a>
+                            <ul class="menu-suspenso">
+                                <li><a href="#">Cliente 1</a></li>
+                                <li><a href="#">Cliente 2</a></li>
+                                <li><a href="#">Cliente 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Clientes</a></li>           
+                <li class="opcoes__item"><a href="#contato" class="opcoes__link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="carrossel">
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="imagens/react.jpg" alt="Livro React For Real"></div>
+                    <div class="swiper-slide"><img src="imagens/web.jpg" alt="Livro Introdução Ao Desenvolvimento Moderno para Web"></div>
+                    <div class="swiper-slide"><img src="imagens/typescript.jpg" alt="Livro Programming TypeScript"></div>
+                    <div class="swiper-slide"><img src="imagens/seguranca.jpg" alt="Livro Segurança para Desenvolvedores Web"></div>
+                    <div class="swiper-slide"><img src="imagens/javascript.jpg" alt="Livro Eloquent JavaScript"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+    <section class="sobre">
+        <div class="sobre__cabecalho">
+            <h2 class="sobre__titulo">Bem-vindo(a) à Front-End Store!</h2>
+            <p class="sobre__texto">
+                Uma plataforma dedicada a trazer as melhores referências e atualizações sobre o mundo do
+                desenvolvimento front-end.<br>
+                Aqui você encontra indicações de livros essenciais, tutoriais e conteúdos voltados para quem quer
+                aprimorar suas habilidades.<br>
+                Além disso, nossa seção de blog mantém você atualizado com as últimas novidades da indústria,
+                incluindo novas ferramentas, frameworks e boas práticas que estão moldando o futuro do
+                desenvolvimento web.<br>
+                Queremos ajudar você a crescer na sua carreira, oferecendo conteúdo relevante e de qualidade, tanto
+                para quem está começando quanto para quem já está no mercado.<br>
+                Explore nossas categorias de leitura, fique por dentro das atualizações e continue evoluindo na sua
+                jornada como desenvolvedor!
+            </p>
+        </div>
+        <img src="imagens/front-end.png" alt="Imagem camadas front-end" class="sobre__imagem">
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">MAIS ACESSADOS</h2>
+        <h3>Veja os tópicos mais procurados e as últimas atualizações sobre o mundo do Front-End!</h3>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <img src="imagens/desenvolvimento-web.png" alt="Ícone desenvolvimento web">
+                <a href="#" class="topicos__link">Web</a>
+            </li>
+            <li class="topicos__item">
+                <img src="imagens/social-media.png" alt="Ícone marketing digital">
+                <a href="#" class="topicos__link">Marketing digital</a>
+            </li>
+            <li class="topicos__item">
+                <img src="imagens/html-css.png" alt="Ícone HTML e CSS">
+                <a href="#" class="topicos__link">HTML & CSS</a>
+            </li>
+            <li class="topicos__item">
+                <img src="imagens/js.png" alt="Ícone JavaScript">
+                <a href="#" class="topicos__link">JavaScript</a>
+            </li>
+            <li class="topicos__item">
+                <img src="imagens/design.png" alt="Ícone ferramenta de Design">
+                <a href="#" class="topicos__link">Design</a>
+            </li>
+            <li class="topicos__item">
+                <img src="imagens/bootstrap.png" alt="Ícone Bootstrap">
+                <a href="#" class="topicos__link">Bootstrap</a>
+            </li>
+        </ul>
+    </section>
+    <footer class="rodape">
+        <div class="rodape__container">
+            <ul class="rodape__opcoes">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <form class="rodape__form" id="contato">
+                <h3>Contato</h3>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="numero" placeholder="Número" required>
+                <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p class="rodape__copyright">2024 - &copy - Front-End Store todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                400: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

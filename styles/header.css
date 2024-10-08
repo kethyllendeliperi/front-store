@@ -1,0 +1,150 @@
+.cabecalho {
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 180px;
+}
+
+.telefones {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+    font-size: 14px;
+    width: 84%;
+}
+
+.telefones p {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 16px;
+    width: 90px;
+}
+
+.opcoes {
+    display: flex;
+}
+
+.opcoes__item {
+    padding: 32px 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+.opcoes__link {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.menu-suspenso {
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.opcoes__menu-suspenso:hover > .menu-suspenso,
+.menu-suspenso:hover {
+    display: block;
+}
+
+.menu-suspenso a {
+    display: block; 
+    width: 100%;
+    text-decoration: none;
+    color: var(--azul);
+    padding: 8px 16px;
+    white-space: nowrap;
+}
+
+.menu-suspenso a:hover {
+    color: var(--laranja);
+}
+
+.menu-suspenso .opcoes__menu-suspenso {
+    position: relative;
+}
+
+.menu-suspenso .menu-suspenso {
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.menu-suspenso .opcoes__menu-suspenso:hover > .menu-suspenso,
+.menu-suspenso:hover {
+    display: block; 
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        background-color: var(--azul);
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        position: relative;
+        height: auto; 
+    }
+
+    .telefones {
+        width: 100%;
+        justify-content: center;
+        
+    }
+    
+    .opcoes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .opcoes__item {
+        padding: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        width: 80%;
+        text-align: center; 
+    }
+    
+    .menu-suspenso {
+        display: none;
+        position: absolute;
+        background-color: var(--branco);
+        border-radius: 5px;
+        z-index: 10;
+        width: 80%;
+        left: 50%; 
+        transform: translateX(-50%); 
+        border: 1px solid var(--azul);
+    }
+    
+    .menu-suspenso a {
+        padding: 8px;
+        width: 100%;
+        text-align: center; 
+    }
+
+
+    .menu-suspenso .opcoes__menu-suspenso:hover > .menu-suspenso {
+        margin-top: 5px;
+        display: block;
+        top: 100%;
+        left: 0; 
+        transform: none;
+        width: 100%;
+        border: 1px solid var(--azul);
+    }
+}
